@@ -605,7 +605,7 @@ export class BrowserCodeReader {
     let task: Promise<Result>;
 
     if (this.isImageLoaded(element)) {
-      task = this.decodeOnce(element, false, true);
+      task = this.decodeOnce(element, false, false);
     } else {
       task = this._decodeOnLoadImage(element);
     }
